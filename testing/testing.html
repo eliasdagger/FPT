@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock API</title>
+  <link rel="stylesheet" type="text/css" href="testing.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo">Dagher Financial</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+              <a href="/AI Accountant/ai_accountant.html" class="navbar__links">AI Accountant</a>
+          </li>
+          <li class="navbar__item">
+              <a href="/Stocks/Stocks Home Page/index.html" class="navbar__links">Stocks</a>
+          </li>
+          <li class="navbar__item">
+              <a href="/Customer Service/customer_service.html" class="navbar__links">Customer Service</a>
+          </li>
+          <li class="navbar__btn">
+              <a href="/arrivalpage/signin_signup.html" class="button">Sign Up</a>
+          </li>
+      </ul>
+    </div>
+</nav>
+<div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <div id="stock-info">
+                <h2>Loading...</h2>
+            </div>
+            <canvas id="stock-chart"></canvas>
+    
+            <div id="time-period-options">
+                <button class="time-period-button" id="1week-button" onclick="handleweekselection(`1week`)">1 Week</button>
+                <button class="time-period-button" id="1month-button" onclick="handleweekselection('4weeks')">1 Month</button>
+                <button class="time-period-button" id="3months-button" onclick="handleweekselection('12weeks')">3 Months</button>
+                <button class="time-period-button" id="1year-button" onclick="handleweekselection('52weeks')">1 Year</button>
+                <button class="time-period-button" id="5years-button" onclick="handleweekselection('260weeks')">5 Years</button>
+                <button class="time-period-button" id="alltime-button" onclick="handleweekselection('alltime')">All Time</button>
+            </div>        
+        </div>
+    </div>
+</div>
+  
+<script src="testing.js"></script>
+<script>
+  function handleTimePeriodChange(timePeriod) {
+    // Call the appropriate function in the JavaScript backend based on the selected time period
+    switch (timePeriod) {
+      case '1week':
+        // Call function for 1 Week
+        break;
+      case '1month':
+        // Call function for 1 Month
+        break;
+      case '3months':
+        // Call function for 3 Months
+        break;
+      case '1year':
+        // Call function for 1 Year
+        break;
+      case '5years':
+        // Call function for 5 Years
+        break;
+      case 'alltime':
+        // Call function for All Time
+        break;
+      default:
+        break;
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+
